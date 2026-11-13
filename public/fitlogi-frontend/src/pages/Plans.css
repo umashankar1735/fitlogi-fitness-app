@@ -1,0 +1,138 @@
+/* src/styles/Plans.css */
+.plans-container {
+  display: flex;
+  height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.sidebar {
+  width: 220px;
+  background: linear-gradient(to bottom right, #0264d6, #00c89e);
+  color: white;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin: 15px 0;
+  cursor: pointer;
+}
+
+.sidebar .active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.main-content {
+  flex: 1;
+  padding: 30px;
+  background-color: #f4f7fb;
+}
+
+.plans-header h1 {
+  font-size: 28px;
+  background: linear-gradient(to right, #0264d6, #00c89e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.plans-filter {
+  margin: 20px 0;
+}
+
+.plans-filter button {
+  margin-right: 10px;
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: none;
+  background-color: #e0e0e0;
+  cursor: pointer;
+}
+
+.plans-filter .active {
+  background: linear-gradient(to right, #0264d6, #00c89e);
+  color: white;
+}
+
+.plans-content {
+  display: flex;
+  gap: 30px;
+}
+
+.available-plans {
+  flex: 2;
+}
+
+.plan-card {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+}
+
+.plan-card .tag {
+  background-color: green;
+  color: white;
+  padding: 3px 8px;
+  border-radius: 10px;
+  font-size: 12px;
+  margin-right: 10px;
+}
+
+.plan-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.start-btn {
+  background: linear-gradient(to right, #0264d6, #00c89e);
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.plan-details {
+  flex: 1;
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  min-height: 200px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.plan-placeholder {
+  text-align: center;
+  color: #777;
+}
+.plan-card {
+  background: #f0f4f8;
+  border-radius: 12px;
+  padding: 15px;
+  margin: 10px 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+button {
+  padding: 6px 12px;
+  margin-top: 8px;
+  cursor: pointer;
+  background-color: #ff5c5c;
+  color: white;
+  border: none;
+  border-radius: 6px;
+}

@@ -1,0 +1,71 @@
+.goal-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(20, 20, 20, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.goal-modal {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.goal-modal h2 {
+  margin-bottom: 20px;
+}
+
+.goal-modal label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+.goal-modal input,
+.goal-modal textarea,
+.goal-modal select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.goal-row {
+  display: flex;
+  gap: 10px;
+}
+
+.goal-row > div {
+  flex: 1;
+}
+
+.modal-actions {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cancel-btn {
+  background: #ccc;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.save-btn {
+  background: linear-gradient(to right, #007bff, #00d9a6);
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}

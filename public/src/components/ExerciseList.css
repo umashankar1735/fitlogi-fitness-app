@@ -1,0 +1,38 @@
+.exercise-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.exercise-item {
+  display: flex;
+  align-items: center;
+  background: #fff6f2;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.exercise-item img {
+  width: 80px;
+  height: 80px;
+  margin-right: 20px;
+}
+
+.exercise-details h4 {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.exercise-details p {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.exercise-time {
+  font-size: 0.9rem;
+  color: #f97d63;
+  font-weight: bold;
+}

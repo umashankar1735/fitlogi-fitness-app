@@ -1,0 +1,172 @@
+.reminders-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.subtitle {
+  text-align: center;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.reminder-form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.reminder-form input {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.days-container {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.days-container button {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  background: #f9f9f9;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.days-container button.active {
+  background: #8298b2;
+  color: #fff;
+}
+
+.submit-btn {
+  background: #61b976;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.reminders-box {
+  margin-top: 30px;
+}
+
+.reminder-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.reminder-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.card-actions button {
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.card-actions button:hover {
+  opacity: 0.7;
+}
+
+/* 🧁 Quick Setup Cards */
+.quick-setup {
+  margin-top: 40px;
+}
+
+.quick-cards {
+  display: flex;
+  gap: 15px;
+}
+
+.quick-cards .card {
+  flex: 1;
+  background: #4d6986;
+  color: white;
+  padding: 38px;
+  border-radius: 30px;
+  cursor: pointer;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* 🧁 Modal Styling */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 1rem;
+}
+
+.cancel-btn {
+  background: #eee;
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+/* Optional: Button to open modal */
+.open-modal-btn {
+  padding: 10px 20px;
+  background-color: #6aa59a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  font-size: 16px;
+}

@@ -1,0 +1,332 @@
+/* Diet Details Page */
+.diet-details-page {
+  min-height: 100vh;
+  background: #f8f9fa;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+}
+
+/* Hero Section */
+.diet-details-hero {
+  height: 250px;
+  background: linear-gradient(135deg, #4ecdc4 0%, #44a08d 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 70px;
+  position: relative;
+  overflow: hidden;
+}
+
+.diet-details-hero::before {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  top: -250px;
+  left: -150px;
+}
+
+.hero-overlay {
+  text-align: center;
+  color: white;
+  z-index: 2;
+  position: relative;
+}
+
+.back-btn {
+  position: absolute;
+  top: -20px;
+  left: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateX(-5px);
+}
+
+.hero-overlay h1 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.hero-overlay p {
+  font-size: 1.1rem;
+  opacity: 0.95;
+}
+
+/* Container */
+.diet-details-container {
+  max-width: 1200px;
+  margin: -80px auto 50px;
+  padding: 0 20px;
+  position: relative;
+  z-index: 10;
+}
+
+/* Loading State */
+.loading-state {
+  background: white;
+  padding: 60px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 4px solid #f1f3f5;
+  border-top-color: #4ecdc4;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 20px;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.loading-state p {
+  font-size: 1.1rem;
+  color: #6c757d;
+}
+
+/* Error State */
+.error-state {
+  background: white;
+  padding: 60px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.error-icon {
+  font-size: 5rem;
+  margin-bottom: 20px;
+}
+
+.error-state h3 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #212529;
+  margin-bottom: 10px;
+}
+
+.error-state p {
+  font-size: 1rem;
+  color: #dc3545;
+}
+
+/* Empty State */
+.empty-state {
+  background: white;
+  padding: 60px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.empty-icon {
+  font-size: 5rem;
+  margin-bottom: 20px;
+}
+
+.empty-state h3 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #212529;
+  margin-bottom: 10px;
+}
+
+.empty-state p {
+  font-size: 1rem;
+  color: #6c757d;
+}
+
+/* Summary Card */
+.summary-card {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.summary-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.summary-icon {
+  font-size: 2.5rem;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+.summary-item h3 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #4ecdc4;
+  margin-bottom: 5px;
+}
+
+.summary-item p {
+  font-size: 0.9rem;
+  color: #6c757d;
+  font-weight: 600;
+}
+
+/* Meals Container */
+.meals-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.meal-section {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.meal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 3px solid #f1f3f5;
+}
+
+.meal-header h3 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #212529;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.meal-icon {
+  font-size: 1.8rem;
+}
+
+.meal-calories {
+  background: linear-gradient(135deg, #4ecdc4 0%, #44a08d 100%);
+  color: white;
+  padding: 8px 20px;
+  border-radius: 25px;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+/* Meal Items Grid */
+.meal-items-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.meal-item-card {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  padding: 20px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
+  border-left: 4px solid #4ecdc4;
+}
+
+.meal-item-card:hover {
+  transform: translateX(5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.item-info h4 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #212529;
+  margin-bottom: 5px;
+}
+
+.item-info p {
+  font-size: 0.85rem;
+  color: #6c757d;
+}
+
+.item-calories {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  padding: 10px 15px;
+  border-radius: 12px;
+}
+
+.calorie-value {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: #4ecdc4;
+}
+
+.calorie-label {
+  font-size: 0.75rem;
+  color: #6c757d;
+  font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .diet-details-hero {
+    height: 200px;
+    margin-top: 60px;
+  }
+
+  .hero-overlay h1 {
+    font-size: 1.8rem;
+  }
+
+  .back-btn {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-bottom: 15px;
+  }
+
+  .diet-details-container {
+    margin: -50px auto 30px;
+  }
+
+  .summary-card {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .meal-items-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .meal-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}

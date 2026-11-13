@@ -1,0 +1,279 @@
+/* Diet Plans Page */
+.dietplans-page {
+  min-height: 100vh;
+  background: #f8f9fa;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+}
+
+/* Hero Section */
+.dietplans-hero {
+  height: 250px;
+  background: linear-gradient(135deg, #4ecdc4 0%, #44a08d 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 70px;
+  position: relative;
+  overflow: hidden;
+}
+
+.dietplans-hero::before {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  top: -250px;
+  right: -150px;
+}
+
+.hero-overlay {
+  text-align: center;
+  color: white;
+  z-index: 2;
+}
+
+.hero-overlay h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.hero-overlay p {
+  font-size: 1.1rem;
+  opacity: 0.95;
+}
+
+/* Container */
+.dietplans-container {
+  max-width: 1200px;
+  margin: -60px auto 50px;
+  padding: 0 20px;
+  position: relative;
+  z-index: 10;
+}
+
+/* Filter Section */
+.filter-section {
+  background: white;
+  padding: 25px;
+  border-radius: 16px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.filter-section h3 {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: #212529;
+  margin-bottom: 15px;
+}
+
+.category-pills {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.pill {
+  padding: 10px 20px;
+  background: #f1f3f5;
+  border: 2px solid transparent;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #495057;
+}
+
+.pill:hover {
+  background: #e9ecef;
+}
+
+.pill.active {
+  background: linear-gradient(135deg, #4ecdc4 0%, #44a08d 100%);
+  color: white;
+  border-color: transparent;
+}
+
+/* Plans Grid */
+.dietplans-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+/* Diet Card */
+.dietplans-card {
+  background: white;
+  border-radius: 20px;
+  padding: 25px;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  position: relative;
+  overflow: hidden;
+}
+
+.dietplans-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: var(--card-color);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.dietplans-card:hover::before {
+  transform: scaleX(1);
+}
+
+.dietplans-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.plan-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.dietplans-card:hover .plan-icon {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.difficulty-badge {
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: white;
+}
+
+.plan-title {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #212529;
+  margin-bottom: 20px;
+}
+
+.plan-details {
+  margin-bottom: 20px;
+}
+
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #f1f3f5;
+}
+
+.detail-row:last-child {
+  border-bottom: none;
+}
+
+.detail-label {
+  font-size: 0.9rem;
+  color: #6c757d;
+  font-weight: 600;
+}
+
+.detail-value {
+  font-size: 0.9rem;
+  color: #212529;
+  font-weight: 700;
+}
+
+.view-plan-btn {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, #4ecdc4 0%, #44a08d 100%);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.view-plan-btn:hover {
+  transform: translateX(5px);
+  box-shadow: 0 4px 15px rgba(78, 205, 196, 0.4);
+}
+
+/* Empty State */
+.empty-state {
+  background: white;
+  padding: 60px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.empty-icon {
+  font-size: 5rem;
+  margin-bottom: 20px;
+}
+
+.empty-state h3 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #212529;
+  margin-bottom: 10px;
+}
+
+.empty-state p {
+  font-size: 1rem;
+  color: #6c757d;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .dietplans-hero {
+    height: 180px;
+    margin-top: 60px;
+  }
+
+  .hero-overlay h1 {
+    font-size: 2rem;
+  }
+
+  .dietplans-container {
+    margin: -40px auto 30px;
+  }
+
+  .dietplans-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .category-pills {
+    flex-direction: column;
+  }
+
+  .pill {
+    width: 100%;
+    text-align: center;
+  }
+}

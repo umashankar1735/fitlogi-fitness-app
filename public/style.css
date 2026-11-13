@@ -1,0 +1,117 @@
+/* Reset and base setup */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  background: #fff;
+  overflow-x: hidden;
+}
+
+/* Welcome screen layout */
+.welcome-screen {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* Left section: headline and buttons */
+.left {
+  flex: 1;
+  min-width: 300px;
+}
+
+.left h1 {
+  font-size: 3.2rem;
+  color: #f97d63;
+  font-weight: bold;
+  margin-bottom: 40px;
+  line-height: 1.4;
+}
+
+/* Buttons container */
+.buttons {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Common button styles */
+.btn {
+  padding: 14px 32px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 130px;
+}
+
+.skip {
+  background: rgba(0, 0, 0, 0.07);
+  color: #333;
+}
+
+.start {
+  background: #f97d63;
+  color: white;
+  font-weight: bold;
+}
+
+.start:hover {
+  background: #e25544;
+}
+
+/* Right section: Image display */
+.right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right img {
+  width: 100%;
+  max-width: 550px;
+  height: 90vh;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.right img:hover {
+  transform: scale(1.02);
+}
+
+/* Responsive layout for mobile */
+@media (max-width: 768px) {
+  .welcome-screen {
+    flex-direction: column;
+    padding: 30px 20px;
+    text-align: center;
+  }
+
+  .left h1 {
+    font-size: 2.4rem;
+  }
+
+  .buttons {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .right img {
+    height: 60vh;
+  }
+}

@@ -1,0 +1,68 @@
+.progress-container {
+  padding: 30px;
+  background: #f7faff;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  max-width: 600px;
+  margin: auto;
+}
+
+.progress-container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #2c3e50;
+  text-align: center;
+}
+
+.tracker-flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 25px;
+  gap: 20px;
+}
+
+.tracker-input {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tracker-input input {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.tracker-input button {
+  padding: 10px 15px;
+  background: #00c853;
+  color: white;
+  border: none;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.tracker-input button:hover {
+  background: #00b248;
+}
+
+.progress-logs {
+  margin-top: 25px;
+}
+
+.progress-logs h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #37474f;
+}
+
+.log-entry {
+  padding: 10px;
+  border-bottom: 1px dashed #ccc;
+  font-size: 16px;
+  color: #455a64;
+}

@@ -1,0 +1,19 @@
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.day-box {
+  background: #eee;
+  border-radius: 12px;
+  padding: 10px 14px;
+  text-align: center;
+}
+
+.day-box.active {
+  background: #f97d63;
+  color: #fff;
+  font-weight: bold;
+}

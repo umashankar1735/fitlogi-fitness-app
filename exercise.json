@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Crunch",
+    "description": "10 sets abs crunch",
+    "goal": "fitness",
+    "duration": "15 min",
+    "calories": "120",
+    "imageUrl": "https://cdn-icons-png.flaticon.com/512/5888/5888049.png",
+    "time": "06:00 AM"
+  },
+  {
+    "name": "Cycling",
+    "description": "15km cycle riding",
+    "goal": "weight-loss",
+    "duration": "30 min",
+    "calories": "300",
+    "imageUrl": "https://cdn-icons-png.flaticon.com/512/4389/4389981.png",
+    "time": "07:00 AM"
+  }
+]

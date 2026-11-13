@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Welcome | FitLogi</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="welcome-screen">
+    <div class="left">
+      <h1>A healthy mind<br>in a healthy body</h1>
+      <div class="buttons">
+        <button class="btn skip" onclick="skip()">Skip</button>
+        <button class="btn start" onclick="getStarted()">Get Started →</button>
+        <button class="btn login" onclick="window.location.href='/login'">Login</button>
+      </div>
+    </div>
+    <div class="right">
+      <img src="images/fitness-welcome.jpg" alt="Fitness Full Body" />
+    </div>
+  </div>
+
+  <script>
+    function getStarted() {
+      window.location.href = "/dashboard";
+    }
+
+    function skip() {
+      window.location.href = "/dashboard";
+    }
+  </script>
+</body>
+</html>

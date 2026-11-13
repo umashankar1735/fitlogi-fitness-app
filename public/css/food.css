@@ -1,0 +1,22 @@
+.recipe-list {
+  margin-top: 20px;
+  list-style: none;
+  padding-left: 0;
+}
+
+.recipe-list li {
+  padding: 10px 15px;
+  background: #f0f0f0;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  color: #333;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #f97d63;
+  font-weight: bold;
+}

@@ -1,0 +1,137 @@
+.goals-container {
+  padding: 30px;
+  max-width: 1200px;
+  margin: auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.summary-block {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+  background: #f8f8f8;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.summary-item {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.exercise-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.exercise-card {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+  transition: transform 0.2s;
+}
+
+.exercise-card:hover {
+  transform: translateY(-5px);
+}
+
+.exercise-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.exercise-info {
+  padding: 15px;
+}
+
+.exercise-info h3 {
+  margin: 0 0 10px;
+  color: #444;
+}
+
+.exercise-info p {
+  margin: 5px 0;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.delete-btn {
+  margin-top: 10px;
+  padding: 8px 12px;
+  border: none;
+  background: #ff5e5e;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.delete-btn:hover {
+  background: #e84343;
+}
+
+.no-exercises {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #888;
+  margin-top: 50px;
+}
+.goals-container {
+  padding: 2rem;
+}
+
+.goals-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.goals-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.exercise-card {
+  background-color: #f8f8f8;
+  border-radius: 12px;
+  padding: 1rem;
+  width: 300px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.exercise-card:hover {
+  transform: scale(1.02);
+}
+
+.exercise-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.exercise-card h3 {
+  margin-top: 10px;
+}
+
+.exercise-card button {
+  background-color: #e63946;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  margin-top: 10px;
+  cursor: pointer;
+}
